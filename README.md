@@ -1,36 +1,22 @@
 # Introduction à OpenShift
 
-Ce dépôt contient du contenu pédagogique pour apprendre les bases d'OpenShift, une plateforme Kubernetes d'entreprise développée par Red Hat.
+Ce dépôt contient du contenu pédagogique pour apprendre les bases d'OpenShift, une plateforme Kubernetes d'entreprise développée par Red Hat. Vous y trouverez des explications, des commandes essentielles, des tutoriels de déploiement d'applications, ainsi que des solutions de dépannage.
 
 ## Prérequis
-- Connaissance de base de Kubernetes et des conteneurs Docker
-- OpenShift installé ou accès à un cluster OpenShift
-
-## Installation
-Pour une installation locale, vous pouvez utiliser Minishift.
-
-```bash
-minishift start
-
-
-### 2. **`INSTALLATION.md`**
-- Détaille le processus d'installation d'OpenShift, Minishift ou OKD (version open source).
-- Peut inclure des instructions spécifiques pour différents systèmes d'exploitation (Linux, Mac, Windows).
-
-**Contenu exemple :**
-```markdown
-# Installation d'OpenShift
-
-Voici les étapes pour installer Minishift sur votre machine locale :
-
-## 1. Prérequis
-- VirtualBox ou KVM installé
+- Connaissance de base des conteneurs Docker et Kubernetes
+- OpenShift installé (ou Minishift pour une utilisation locale)
 - Git installé
-- Docker installé
 
-## 2. Installation de Minishift
-### Sous Linux :
+## Contenu du dépôt
+- `INSTALLATION.md` : Instructions pour installer OpenShift ou Minishift.
+- `COMMANDES_OPENSHIFT.md` : Guide des commandes essentielles à connaître.
+- `DEPLOIEMENT_APP.md` : Tutoriel pour déployer une application sur OpenShift.
+- `TROUBLESHOOTING.md` : Solutions pour résoudre les problèmes courants.
+- `GLOSSAIRE.md` : Définitions des termes techniques utilisés dans OpenShift.
+- `CI_CD.md` : Intégration et déploiement continus avec OpenShift.
+- `LICENSE` : Conditions d'utilisation du projet.
+- `CONTRIBUTING.md` : Règles pour contribuer au projet.
+
+## Comment cloner ce dépôt
 ```bash
-curl -LO https://github.com/minishift/minishift/releases/download/v1.34.3/minishift-1.34.3-linux-amd64.tgz
-tar -xvzf minishift-1.34.3-linux-amd64.tgz
-sudo mv minishift /usr/local/bin
+git clone https://github.com/ton-utilisateur/openshift-cours.git
